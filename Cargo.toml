@@ -1,0 +1,4 @@
+
+[workspace]
+members = ["disney_infinity_lib", "disney_infinity_example"]
+resolver = "3"

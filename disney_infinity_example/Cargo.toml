@@ -1,0 +1,8 @@
+[package]
+name = "disney_infinity_example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio =  {version = "*", features = ["rt-multi-thread", "macros"]}
+disney_infinity_lib ={path = "../disney_infinity_lib", features = ["threaded", "async"]}

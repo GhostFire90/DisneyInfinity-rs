@@ -1,0 +1,15 @@
+[package]
+name = "disney_infinity"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+hidapi = "2.6.3"
+tokio = {version = "*", features = ["sync", "rt", "rt-multi-thread", "time"], optional = true}
+
+
+[features]
+default = ["async"]
+async = ["dep:tokio"]
+threaded = []
